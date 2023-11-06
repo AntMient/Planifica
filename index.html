@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Keepable</title>
+</head>
+
+<body class="body">
+  <!-- Happy coding -->
+  <header class="content-welcome">
+    <h1 class="text-white">
+      {keep<span class="text-gray-300">able</span>}
+    </h1>
+    <p class="text-white semibold">
+      Welcome to {keepable}
+    </p>
+  </header>
+  <main class="main">
+    <div class="layout-1 layout-border">
+      <ul>
+        <li class="lateral__links pointer">
+          <img src="images/icons/keys.svg" alt="">
+          <a href="index.html">Notes</a>
+        </li>
+        <li class="lateral__links pointer">
+          <img src="images/icons/frame.svg" alt="">
+          <a href="trash.html">Trash</a>
+        </li>
+      </ul>
+    </div>
+    <div class="layout-2 layout-border js-content">
+      <div class="layout-center">
+        <div class="input">
+          <form action="#" class="form-input js-note-form">
+            <div class="flex-column">
+              <input class="outline " type="text" placeholder="Title..." id="title" name="title" />
+              <input class="outline" type="text" placeholder="Take a note..." id="description" name="description" />
+            </div>
+            <div class="flex-wrap-between align-end h-full">
+              <img class="pointer" src="images/icons/palette.svg" alt="">
+              <button type="submit">
+                <p class="text-lg weight-700">Keep it!</p>
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="layout-nocontent grow-2 notvisible">
+        <h2 class="text-white center-text">No notes to keep</h2>
+      </div>
+      <div class="layout-content grow-2 js-notes">
+      </div>
+    </div>
+  </main>
+  <script src="library.js"></script>
+  <script src="index.js"></script>
+  <script src="new-note.js"></script>
+
+</body>
+
+</html>
